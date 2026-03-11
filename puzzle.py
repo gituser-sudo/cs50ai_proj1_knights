@@ -45,7 +45,7 @@ knowledge2 = And(
 # B says "C is a knave."
 # C says "A is a knight."
 knowledge3 = And(
-    # TODO
+    AKnight, BKnave, CKnight
 )
 
 
