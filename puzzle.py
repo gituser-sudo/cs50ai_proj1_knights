@@ -15,6 +15,7 @@ AKnight  AKnave  BKnight  BKnave  CKnight  CKnave
   True     False   X        X        X       X               AKnight
   False    True    X        X        X       X               No solution
   True      True                                             AKanve
+  False     True                                             No solution
 
 # Puzzle 0
 # A says "I am both a knight and a knave."
