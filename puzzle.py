@@ -12,7 +12,7 @@ CKnave = Symbol("C is a Knave")
 
 #   Model                                                   Knowledge
 AKnight  AKnave  BKnight  BKnave  CKnight  CKnave  Query
-  True     False   X        X        X       X              AKnight
+  True     False   X        X        X       X               AKnight
   False    True    X        X        X       X               No solution
   True      True                                             AKanve
   False     True                                             No solution
