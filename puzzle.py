@@ -20,7 +20,7 @@ AKnight  AKnave  BKnight  BKnave  CKnight  CKnave
 # Puzzle 0
 # A says "I am both a knight and a knave."
 knowledge0 = And(
-    AKnave, And(AKnight, AKnave)
+    AKnight, Not(AKnave)
 )
 
 # Puzzle 1
