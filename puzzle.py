@@ -10,10 +10,11 @@ CKnight = Symbol("C is a Knight")
 CKnave = Symbol("C is a Knave")
 
 
-#   Model                        Knowledge
-AKnight  AKnave  BKnight  BKnave
-
-
+#   Model                                                   Knowledge
+AKnight  AKnave  BKnight  BKnave  CKnight  CKnave
+  True     False   X        X        X       X               AKnight
+  False    True    X        X        X       X               AKnave
+  True      True                                             AKanve
 
 # Puzzle 0
 # A says "I am both a knight and a knave."
