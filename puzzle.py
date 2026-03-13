@@ -29,9 +29,8 @@ knowledge0 = And(
     Implication(And(AKnight, IamKnave), False),
     Implication(And(AKnight, IamKnight), AKnight),
     Or(
-        And(AKnave,Or(Not(IamKnave), Not(IamKnight)))
-    ,
-        And(AKnight,And(IamKnight, IamKnave))
+        And(AKnave, Or(Not(IamKnave), Not(IamKnight))),
+        And(AKnight, And(IamKnight, IamKnave))
     )
 )
 
