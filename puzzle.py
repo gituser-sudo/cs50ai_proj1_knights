@@ -24,14 +24,14 @@ IamKnave = Symbol("I am a Knave")
 knowledge0 = And(
     IamKnight,
     IamKnave,
-    Implication(And(AKnave, IamKnave), false)
-    Implication(And(AKnave, IamKnight), AKnave)
-    Implication(And(AKnight, IamKnave), false)
-    Implication(And(AKnight, IamKnight), AKnight)
+    Implication(And(AKnave, IamKnave), false),
+    Implication(And(AKnave, IamKnight), AKnave),
+    Implication(And(AKnight, IamKnave), false),
+    Implication(And(AKnight, IamKnight), AKnight),
     Or(
         And(AKnave,Or(Not(IamKnave), Not(IamKnight)))
     ,
-        And(AKnight,And(IamKnight, IamKnave)))
+        And(AKnight,And(IamKnight, IamKnave))
     )
 )
 
