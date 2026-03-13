@@ -22,16 +22,17 @@ IamKnave = Symbol("I am a Knave")
 # Puzzle 0
 # A says "I am both a knight and a knave."
 knowledge0 = And(
-    IamKnight,
-    IamKnave,
-    Implication(And(AKnave, IamKnave), False),
-    Implication(And(AKnave, IamKnight), AKnave),
-    Implication(And(AKnight, IamKnave), False),
-    Implication(And(AKnight, IamKnight), AKnight),
-    Or(
-        And(AKnave, Or(Not(IamKnave), Not(IamKnight))),
-        And(AKnight, And(IamKnight, IamKnave))
-    )
+    AKnave
+    # IamKnight,
+    # IamKnave,
+    # Implication(And(AKnave, IamKnave), False),
+    # Implication(And(AKnave, IamKnight), AKnave),
+    # Implication(And(AKnight, IamKnave), False),
+    # Implication(And(AKnight, IamKnight), AKnight),
+    # Or(
+    #     And(AKnave, Or(Not(IamKnave), Not(IamKnight))),
+    #     And(AKnight, And(IamKnight, IamKnave))
+    # )
 )
 
 # Puzzle 1
