@@ -31,7 +31,7 @@ knowledge0 = And(
     Or(
         And(AKnave,Or(Not(IamKnave), Not(IamKnight)))
     ,
-        And(AKnight,And(IamKnight, IamKnave))
+        And(AKnight,And(IamKnight, IamKnave)))
     )
 )
 
