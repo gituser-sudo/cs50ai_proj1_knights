@@ -40,6 +40,7 @@ knowledge0 = And(
     Implication(AKnight, IamKnight),
     Implication(AKnight, Not(IamKnave)),
     Or(
+        # Knave statement is false
         Or(Not(IamKnight), Not(IamKnave)),
         And(IamKnight, IamKnave)
     )
