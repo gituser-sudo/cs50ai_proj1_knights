@@ -41,9 +41,9 @@ knowledge0 = And(
     Implication(AKnight, Not(IamKnave)),
     Or(
         # Knave puzzle statement is false
-        Or(Not(IamKnight), Not(IamKnave)),
+        And(AKnave, Or(Not(IamKnight), Not(IamKnave))),
         # Knight puzzle statement should be true
-        And(IamKnight, IamKnave)
+        And(AKnight, And(IamKnight, IamKnave))
     )
 )
 
