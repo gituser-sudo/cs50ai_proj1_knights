@@ -58,10 +58,8 @@ knowledge1 = And(
     Implication(AKnave, Not(IamKnave)),
     Implication(AKnight, IamKnight),
     Implication(AKnight, Not(IamKnave)),
-    Implication(BKnave, YouareKnight),
-    Implication(BKnave, Not(YouareKnave)),
-    Implication(BKnight, YouareKnave),
-    Implication(BKnight, Not(YouareKnight)),
+    Implication(BKnave, YouareKnave),
+    Implication(BKnight, YouareKnight),
     Or(
         # Knave should have at least one untruth
         And(AKnave, Or(Not(IamKnave), Not(YouareKnave))),
