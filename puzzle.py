@@ -53,10 +53,15 @@ knowledge0 = And(
 # A says "We are both knaves."
 # B says nothing.
 knowledge1 = And(
-    Implication(AKnave, WearebothKnaves),
+    Implication(AKnave, IamKnight),
     Implication(AKnave, Not(IamKnave)),
     Implication(AKnight, IamKnight),
     Implication(AKnight, Not(IamKnave)),
+    Implication(BKnave, IamKnight),
+    Implication(BKnave, Not(IamKnave)),
+    Implication(BKnight, IamKnight),
+    Implication(BKnight, Not(IamKnave)),
+    
 )
 
 # Puzzle 2
