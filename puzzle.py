@@ -67,7 +67,8 @@ knowledge1 = And(
         And(AKnave, Or(Not(IamKnave), Not(YouareKnave))),
         # Knight should be all true
         And(AKnight, And(IamKnave, YouareKnave)),
-        
+
+        And(BKnave)
     )
 
 )
