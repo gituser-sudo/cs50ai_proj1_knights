@@ -65,9 +65,8 @@ knowledge1 = And(
         And(Or(AKnave, BKnave), Or(Not(IamKnave), Not(YouareKnave))),
         And(Or(AKnave, BKnight), Or(Not(IamKnave), Not(YouareKnave))),
         # Knight should be all true
-        And(AKnight, And(IamKnave, YouareKnave)),
-
-        And(BKnave)
+        And(Or(AKnight, BKnave), And(IamKnave, YouareKnave)),
+        And(Or(AKnight, BKnight), And(IamKnave, YouareKnave)),
     )
 
 )
