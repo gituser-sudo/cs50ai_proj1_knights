@@ -12,7 +12,8 @@ CKnave = Symbol("C is a Knave")
 IamKnight = Symbol("I am a Knight")
 IamKnave = Symbol("I am a Knave")
 
-WeAreBothKnaves = Symbol("We are both Knaves")
+YouareKnave = Symbol("You are Knave")
+YouareKnight = Symbol("You are Knight")
 
 #   Model                                                   Knowledge
 # AKnight  AKnave  BKnight  BKnave  CKnight  CKnave  Query
@@ -57,11 +58,11 @@ knowledge1 = And(
     Implication(AKnave, Not(IamKnave)),
     Implication(AKnight, IamKnight),
     Implication(AKnight, Not(IamKnave)),
-    Implication(BKnave, IamKnight),
+    Implication(BKnave, YouareKnight),
     Implication(BKnave, Not(IamKnave)),
-    Implication(BKnight, IamKnight),
+    Implication(BKnight, YouareKnave),
     Implication(BKnight, Not(IamKnave)),
-    
+
 )
 
 # Puzzle 2
