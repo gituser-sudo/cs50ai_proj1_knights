@@ -59,9 +59,7 @@ knowledge1 = And(
     Implication(AKnight, IamKnight),
     Implication(AKnight, Not(IamKnave)),
     Implication(BKnave, YouareKnight),
-    Implication(BKnave, Not(IamKnave)),
     Implication(BKnight, YouareKnave),
-    Implication(BKnight, Not(IamKnave)),
 
 )
 
