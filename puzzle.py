@@ -66,7 +66,8 @@ knowledge1 = And(
         # Knave should have at least one untruth
         And(AKnave, Or(Not(IamKnave), Not(YouareKnave))),
         # Knight should be all true
-        And(AKnight, And(IamKnave, YouareKnave))
+        And(AKnight, And(IamKnave, YouareKnave)),
+        
     )
 
 )
