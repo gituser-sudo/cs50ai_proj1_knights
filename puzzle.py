@@ -12,6 +12,8 @@ CKnave = Symbol("C is a Knave")
 IamKnight = Symbol("I am a Knight")
 IamKnave = Symbol("I am a Knave")
 
+WeAreBothKnaves = Symbol("We are both Knaves")
+
 #   Model                                                   Knowledge
 # AKnight  AKnave  BKnight  BKnave  CKnight  CKnave  Query
 #   True     False   X        X        X       X               AKnight
